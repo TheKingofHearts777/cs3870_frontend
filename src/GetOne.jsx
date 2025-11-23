@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const GetOne = () => {
+export default function GetOne() {
     const [query, setQuery] = useState("");
     const [contact, setContact] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -118,5 +118,3 @@ const GetOne = () => {
         </div>
     );
 };
-
-export default GetOne;
