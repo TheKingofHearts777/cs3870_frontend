@@ -5,7 +5,7 @@ const Contacts = () => {
     useEffect(() => {
         const fetchContacts = async () => {
             try {
-                const response = await fetch("https://cs3870-backend-1.onrender.com/contacts");
+                const response = await fetch("https://cs3870-backend-tjpk.onrender.com/contacts");
                 if (!response.ok) {
                     throw new Error("Failed to fetch contacts");
                 }
