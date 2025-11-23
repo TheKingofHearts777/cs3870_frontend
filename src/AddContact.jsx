@@ -4,6 +4,7 @@ export default function AddContact() {
     const [contactName, setContactName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [message, setMessage] = useState("");
+    const [messageTimeStamp, setMessageTimeStamp] = useState("");
     const [imageUrl, setImageUrl] = useState("");
     const [responseMsg, setResponseMsg] = useState("");
 
@@ -37,6 +38,7 @@ export default function AddContact() {
                 setContactName("");
                 setPhoneNumber("");
                 setMessage("");
+                setMessageTimeStamp(Date.now());
                 setImageUrl("");
             } else {
                 setResponseMsg(data?.message || "Failed to add contact.");

@@ -5,6 +5,7 @@ export default function UpdateContact() {
     const [contactName, setContactName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [message, setMessage] = useState("");
+    const [messageTimeStamp, setMessageTimeStamp] = useState("");
     const [imageUrl, setImageUrl] = useState("");
     const [responseMsg, setResponseMsg] = useState("");
 
@@ -57,6 +58,7 @@ export default function UpdateContact() {
                 setContactName("");
                 setPhoneNumber("");
                 setMessage("");
+                setMessageTimeStamp(Date.now());
                 setImageUrl("");
             } else {
                 setResponseMsg(data?.message || "Failed to update contact.");
