@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/TheKingofHearts777/cs3870_frontend.git",
+  "homepage": "https://github.com/TheKingofHearts777/cs3870_frontend",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -33,10 +33,6 @@ function App() {
             path="/update"
             element={<Layout title="Update Contact"><UpdateContact /></Layout>}
           />
-          <Route
-            path="/getOne"
-            element={<Layout title="Get One Contact"><GetOne /></Layout>}
-          />
           {/* default */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
