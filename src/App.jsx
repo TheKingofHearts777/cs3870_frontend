@@ -4,6 +4,7 @@ import Layout from "./navigation/Layout.jsx";
 import AddContact from './AddContact.jsx';
 import DeleteContact from './DeleteContact.jsx';
 import UpdateContact from './UpdateContact.jsx';
+import GetOne from './GetOne.jsx';
 
 function App() {
   const Home = () => <p>Welcome.</p>;
@@ -34,7 +35,7 @@ function App() {
           />
           <Route
             path="/getOne"
-            element={<Layout title="Get One Contact"><UpdateContact /></Layout>}
+            element={<Layout title="Get One Contact"><GetOne /></Layout>}
           />
           {/* default */}
           <Route path="*" element={<Navigate to="/" replace />} />
