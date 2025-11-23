@@ -21,7 +21,7 @@ export default function UpdateContact() {
         try {
             // Fetch current contact from DB
             const getRes = await fetch(
-                `http://localhost:8081/contacts/${encodeURIComponent(oldNameTrim)}`
+                `https://cs3870-backend-tjpk.onrender.com/contacts/${encodeURIComponent(oldNameTrim)}`
             );
             const existing = await getRes.json().catch(() => null);
 
@@ -39,7 +39,7 @@ export default function UpdateContact() {
             };
 
             const res = await fetch(
-                `http://localhost:8081/contacts/${encodeURIComponent(oldNameTrim)}`,
+                `https://cs3870-backend-tjpk.onrender.com/contacts/${encodeURIComponent(oldNameTrim)}`,
                 {
                     method: "PUT",
                     headers: {

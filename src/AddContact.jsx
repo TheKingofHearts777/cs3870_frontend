@@ -17,7 +17,7 @@ export default function AddContact() {
         }
 
         try {
-            const res = await fetch("http://localhost:8081/contacts", {
+            const res = await fetch("https://cs3870-backend-tjpk.onrender.com/contacts", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

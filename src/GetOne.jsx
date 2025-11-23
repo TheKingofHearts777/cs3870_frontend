@@ -21,13 +21,13 @@ const GetOne = () => {
 
         try {
             // Try a dedicated endpoint first: /contacts/:name
-            const resp = await fetch(`http://localhost:8081/contacts/${encodeURIComponent(name)}`);
+            const resp = await fetch(`https://cs3870-backend-tjpk.onrender.com/contacts/${encodeURIComponent(name)}`);
             if (resp.ok) {
                 const data = await resp.json();
                 setContact(data);
             } else {
                 // Fallback: fetch all contacts and do a client-side match
-                const allResp = await fetch("http://localhost:8081/contacts");
+                const allResp = await fetch("https://cs3870-backend-tjpk.onrender.com/contacts");
                 if (!allResp.ok) throw new Error("Failed to fetch contacts");
                 const all = await allResp.json();
                 const found = all.find(
