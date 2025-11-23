@@ -19,6 +19,9 @@ export default function Sidebar() {
                 <NavLink to="/update" className="nav-link border rounded-3 px-3 py-2">
                     Update contact
                 </NavLink>
+                <navLink to="/getOne" className="nav-link border rounded-3 px-3 py-2">
+                    Get one contact
+                </navLink>
             </nav>
         </aside>
     );
